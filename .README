@@ -1,0 +1,46 @@
+# QA Take Home Test Akulaku Finance Indonesia’s – Cypress
+This repository contains automated test scripts for web application testing using Cypress.
+
+## 📌 Project Overview
+This project is created to automate end-to-end testing for a sample web application, Akulaku Finance Indonesia’s.
+The focus is on validating core user flows such as Main page Akulaku Finance Indonesia’s and Akulaku Finance Indonesia's Kegiatan page.
+
+## 🛠 Tech Stack
+- Cypress
+- JavaScript
+- Node.js
+- Git & GitHub
+
+## 📂 Folder Structure
+cypress/
+ ├── e2e/           # Test cases
+ ├── fixtures/      # Test data
+ ├── support/       # Custom commands
+ └── screenshots/   # Screenshot on failure
+
+ ## ✅ Test Scenarios
+- Verify the homepage (https://www.akulakufinance.co.id/) is successfully opened\
+- Navigate to https://www.akulakufinance.co.id/kegiatan and Verify the Kegiatan page is successfully opened
+- Verify there are 6 video thumbnails visible on the page
+- Verify that video pagination (page switcher) is available
+- Verify there are 2 suggested search results appearing in the dropdown suggestion list
+
+## ▶️ How to Run
+1. Clone the repository
+   git clone https://github.com/argietha/Akulaku-Project-Argietha.git
+
+2. Install dependencies
+   npm install
+
+3. Run test (headless)
+   npx cypress run
+
+4. Run test (GUI)
+   npx cypress open
+
+## 📊 Test Report
+- Screenshots are automatically captured on failure
+- Test results can be seen in the terminal after execution
+
+## 📝 QA Engineer – Take Home Test  
+### Website Navigation & Video Section Verification
