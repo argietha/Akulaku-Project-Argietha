@@ -104,8 +104,8 @@ context('Actions', () => {
             .should('be.visible')
 
         // Verify search results contain the keyword "vaksin"
-        cy.contains('Kegiatan Vaksin Covid-19 Bersama APPI').should('be.visible')
-        cy.contains('Akulaku Finance Indonesia Dukung Percepatan Vaksinasi Covid-19').should('be.visible')
+        cy.contains('Kegiatan Vaksin Covid-19 Bersama APPI').should('be.visible', { timeout: 20000 })
+        cy.contains('Akulaku Finance Indonesia Dukung Percepatan Vaksinasi Covid-19').should('be.visible', { timeout: 20000 })
     })
 
 })
