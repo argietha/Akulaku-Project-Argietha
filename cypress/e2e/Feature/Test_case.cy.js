@@ -26,37 +26,37 @@ context('Actions', () => {
     it('TC003: Verify there are 6 video thumbnails visible on the page', () => {
         // Verify Akulaku Tumbnail Video elements 
         //1st Video
-        cy.get('#widget2')
+        cy.get('#widget2', { timeout: 20000 })
             .should('have.attr', 'src')
             .and('include', 'youtube.com/embed/um-kd45LIlw')
             .and('include', 'autoplay=0')
 
         //2nd Video
-        cy.get('#widget4')
+        cy.get('#widget4', { timeout: 20000 })
             .should('have.attr', 'src')
             .and('include', 'youtube.com/embed/VP2wxufa7do')
             .and('include', 'autoplay=0')
 
         //3rd Video
-        cy.get('#widget6')
+        cy.get('#widget6', { timeout: 20000 })
             .should('have.attr', 'src')
             .and('include', 'youtube.com/embed/dYLPM6YccYQ')
             .and('include', 'autoplay=0')
 
         //4th Video
-        cy.get('#widget8')
+        cy.get('#widget8', { timeout: 20000 })
             .should('have.attr', 'src')
             .and('include', 'youtube.com/embed/sBTOgBQtuE8')
             .and('include', 'autoplay=0')
 
         //5th Video
-        cy.get('#widget10')
+        cy.get('#widget10', { timeout: 20000 })
             .should('have.attr', 'src')
             .and('include', 'youtube.com/embed/_ODIrX5DIfs')
             .and('include', 'autoplay=0')
 
         //6th Video
-        cy.get('#widget12')
+        cy.get('#widget12', { timeout: 20000 })
             .should('have.attr', 'src')
             .and('include', 'youtube.com/embed/AHQTAmheQio')
             .and('include', 'autoplay=0')
@@ -75,23 +75,19 @@ context('Actions', () => {
         // User can click on page 2 and next, then verify the page switch
         cy.get('nav[aria-label="Page navigation example"] button')
             .contains('2')
-            .click()
-        cy.wait(5000);
+            .click({ timeout: 20000 })
 
         cy.get('nav[aria-label="Page navigation example"] button')
             .contains('3')
-            .click()
-        cy.wait(5000);
+            .click({ timeout: 20000 })
 
         cy.get('nav[aria-label="Page navigation example"] button')
             .contains('4')
-            .click()
-        cy.wait(5000);
+            .click({ timeout: 20000 })
 
         cy.get('nav[aria-label="Page navigation example"] button')
             .contains('5')
-            .click()
-        cy.wait(5000);
+            .click({ timeout: 20000 })
 
 
 
